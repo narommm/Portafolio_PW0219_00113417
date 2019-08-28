@@ -1,0 +1,16 @@
+h1{
+    color: red;
+}
+p{
+    color:blueviolet;
+}
+#parrafo{
+    color: hotpink;
+}
+/*# para id y . para class
+Se le aplica siempre al ultimo elemento 
+p ~ ul, en este caso css se aplica a todos los ul que le precenden de un parrafo
+*/
+p.parrafo{
+    color: blue;
+}
