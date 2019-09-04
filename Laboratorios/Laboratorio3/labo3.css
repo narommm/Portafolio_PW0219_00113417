@@ -1,0 +1,78 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://www.uniradioserver.com/media/news_thumbs/201902/20190226074854_179.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+nav{    
+    width: 100%;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+main .logo{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+main .laboratorio{
+    font-size: 5em;
+    color: beige;
+}
+main .botones{
+    box-shadow: 1.4em;
+
+}
+.logo>img{
+    object-fit: cover;
+    width: 5em;
+    height: 5em;
+    margin: 0.5em;
+    background: white;
+    border: 1px solid black;
+    border-radius: 100%;
+    opacity: 0.7;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo>img:hover{
+    opacity: 1;
+}
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}

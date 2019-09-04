@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+body{
+    box-sizing: border-box;
+}
+*, ::before, ::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: whitesmoke;
+}
+h1{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    /*Para fuentes es mejor utilizar em
+    
+    */
+}
+/*p{
+    font-size: 2em;
+    color: #ffffff;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 100;
+    border: 2px solid gray;
+    text-align: left;
+    line-height: 1;
+    padding: 2px 3px;
+    width: 90px;
+    overflow: scroll; 
+   
+}*/
+
+table{
+    border-collapse: collapse;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+.border-bottom {
+    border-bottom: 1px solid black;
+}
+td{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+tr td:first-child, tr td:nth-last-of-type(2) {
+border-right: 1px solid black;
+}
+td:hover{
+    background-color: rgb(0,0,0,0.5);
+    border: 1px solid red;
+}
