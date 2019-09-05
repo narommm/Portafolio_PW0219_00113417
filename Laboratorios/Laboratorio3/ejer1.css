@@ -4,6 +4,7 @@ body {
   background-image: url(https://images.unsplash.com/photo-1540388482879-c02f7127c83f?ixlib=rb-1.2.1&w=1000&q=80);
 }
 header {
+
   margin-top: 10px;
 }
 header .titulo {
@@ -12,14 +13,18 @@ header .titulo {
   font-family: "Architects Daughter", cursive;
   color: white;
   justify-content: center;
-  align-content: center;
+ 
   margin-top: 10px;
 }
-
 #example2 {
   display: grid;
   justify-content: center;
-  grid-template: 100px 100px 100px 100px 100px 100px 100px 100px/ 100px 100px 100px 100px 100px 100px 100px 100px;
+  align-items: flex-end;
+  padding: 0;
+  justify-self: center;
+  align-content: space-between;
+  margin-top: 20px;
+  grid-template: 50px 50px 50px 50px 50px 50px 50px 50px/ 50px 50px 50px 50px 50px 50px 50px 50px;
   grid-gap: 5px;
   grid-auto-rows: 5em;
 }
