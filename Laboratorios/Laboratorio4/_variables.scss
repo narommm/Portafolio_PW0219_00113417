@@ -1,6 +1,44 @@
-$url_fondo : url(http://epicwallpaperz.com/wallpaper-hd/black-abstract-wallpapers-1080p-On-wallpaper-hd.jpg);
-$color_white: white ;
+$url_fondo: url(http://epicwallpaperz.com/wallpaper-hd/black-abstract-wallpapers-1080p-On-wallpaper-hd.jpg);
+$color_white: white;
 $color_black: #212121;
-$border: 1px solid black; 
-$font_family:  'Lexend Deca', sans-serif;
-$tamanio100 : 100%;
+$border: 1px solid black;
+$font_family: "Lexend Deca", sans-serif;
+$tamanio100: 100%;
+
+@mixin img() {
+  object-fit: cover;
+  width: 5em;
+  height: 5em;
+  margin: 0.5em;
+  background: $color_white;
+  border: $border;
+  border-radius: $tamanio100;
+  opacity: 1;
+  justify-content: center;
+  align-content: center;
+}
+
+@mixin body() {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: $tamanio100;
+  width: $tamanio100;
+}
+
+@mixin h1() {
+  font-size: 2.5em;
+  color: $color_black;
+  font-family: $font_family;
+  font-weight: bold;
+  margin: 10px;
+}
+
+@mixin cuerpo() {
+    background-image: $url_fondo;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}

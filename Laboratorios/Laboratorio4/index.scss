@@ -9,20 +9,11 @@ html,body{
 }
 
 body{
-    background-image: $url_fondo;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    @include cuerpo();
 }
 
 .body{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    height: $tamanio100;
-    width: $tamanio100;
+   @include body();
 
 }
 nav{    
@@ -49,16 +40,7 @@ main{
         justify-content: center;
         align-items: center;
         img{
-            object-fit: cover;
-            width: 5em;
-            height: 5em;
-            margin: 0.5em;
-            background: $color_white;
-            border: $border;
-            border-radius: $tamanio100;
-            opacity: 1;
-            justify-content: center;
-            align-content: center;
+            @include img();
             &:hover{
                 opacity: 0.5;
             }
@@ -69,11 +51,7 @@ main{
         background-color: white;
         opacity: 0.8;
         h1{
-            font-size: 2.5em;
-            color: $color_black;
-            font-family: $font_family;
-            font-weight: bold;
-            margin: 10px;
+            @include h1();
         }
     
     }
