@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+@import "variables";
+
+html,body{
+    width: $tamanio100;
+    height: $tamanio100;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: $url_fondo;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: $tamanio100;
+    width: $tamanio100;
+
+}
+nav{    
+    width: $tamanio100;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .botones{
+        box-shadow: 1.4em;
+    
+    }
+    .logo{
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        img{
+            object-fit: cover;
+            width: 5em;
+            height: 5em;
+            margin: 0.5em;
+            background: $color_white;
+            border: $border;
+            border-radius: $tamanio100;
+            opacity: 1;
+            justify-content: center;
+            align-content: center;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .laboratorio{
+        background-color: white;
+        opacity: 0.8;
+        h1{
+            font-size: 2.5em;
+            color: $color_black;
+            font-family: $font_family;
+            font-weight: bold;
+            margin: 10px;
+        }
+    
+    }
+
+}
+footer{
+    width: $tamanio100;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
